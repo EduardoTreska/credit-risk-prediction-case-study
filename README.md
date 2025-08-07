@@ -1,7 +1,4 @@
-# credit-risk-prediction-case-study
-Um estudo de caso de Data Science para prever o risco de inadimplência de clientes de cartão de crédito, utilizando LightGBM
-
-# 🤖 Radar Preditivo de Risco de Crédito: Um Estudo de Caso de Machine Learning
+# 🤖 Radar Preditivo de Risco de Crédito: Um Estudo de Caso de Machine Learning.
 
 *Este projeto foi desenvolvido como parte de um programa de mentoria intensiva, demonstrando um ciclo completo de desenvolvimento de um modelo de classificação para um problema de negócio de alto impacto.*
 
@@ -110,4 +107,5 @@ Este projeto demonstra com sucesso a construção de um modelo de classificaçã
 ![Seaborn](https://img.shields.io/badge/Seaborn-3776AB?style=for-the-badge&logo=seaborn&logoColor=white)
 ![Scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
 ![LightGBM](https://img.shields.io/badge/LightGBM-4B0082?style=for-the-badge&logo=lightgbm&logoColor=white)
+
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=Jupyter&logoColor=white)
