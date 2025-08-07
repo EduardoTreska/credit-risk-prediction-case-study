@@ -32,62 +32,12 @@ A análise revelou que o **histórico de pagamentos recentes é o fator mais det
 
 O processo de modelagem iterativa permitiu uma melhoria substancial na métrica de negócio (Recall). A tabela abaixo resume a performance dos modelos testados:
 
-<style>
-    .dark-table {
-        border-collapse: collapse; margin: 25px 0; font-size: 0.9em;
-        font-family: sans-serif; min-width: 400px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
-        color: #ffffff; 
-    }
-    .dark-table thead tr {
-        background-color: #343a40; color: #ffffff; text-align: center;
-    }
-    .dark-table th, .dark-table td { padding: 12px 15px; text-align: center; }
-    .dark-table tbody tr { background-color: #495057; border-bottom: 1px solid #6c757d; }
-    .dark-table tbody tr:last-of-type { border-bottom: 2px solid #17a2b8; }
-    .highlight-green { background-color: #28a745 !important; font-weight: bold; }
-    .highlight-red { background-color: #dc3545 !important; font-weight: bold; }
-</style>
-<table class="dark-table">
-    <thead>
-        <tr>
-            <th>Modelo</th>
-            <th>Recall (Default)</th>
-            <th>Precision (Default)</th>
-            <th>F1-Score (Default)</th>
-            <th>Acurácia</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>V1: Regressão Logística</td>
-            <td>0.24 (24%)</td>
-            <td>0.69 (69%)</td>
-            <td>0.36</td>
-            <td>81%</td>
-        </tr>
-        <tr>
-            <td>V2: RandomForest (max_depth=10)</td>
-            <td>0.34 (34%)</td>
-            <td>0.64 (64%)</td>
-            <td>0.45</td>
-            <td>81%</td>
-        </tr>
-         <tr>
-            <td>V2.1: RandomForest (seu ajuste)</td>
-            <td>0.56 (56%)</td>
-            <td>0.52 (52%)</td>
-            <td>0.54</td>
-            <td>79%</td>
-        </tr>
-        <tr>
-            <td><b>V3: LightGBM (Campeão)</b></td>
-            <td class="highlight-green">0.62 (62%)</td>
-            <td class="highlight-red">0.47 (47%)</td>
-            <td style="font-weight: bold;">0.54</td>
-            <td>76%</td>
-        </tr>
-    </tbody>
-</table>
+| Modelo | Recall (Default) | Precision (Default) | F1-Score (Default) | Acurácia |
+| :--- | :---: | :---: | :---: | :---: |
+| V1: Regressão Logística (Baseline) | 0.24 (24%) | 0.69 (69%) | 0.36 | 81% |
+| V2: RandomForest (Padrão) | 0.34 (34%) | 0.64 (64%) | 0.45 | 81% |
+| V2.1: RandomForest (Ajustado com max_depth=10) | 0.56 (56%) | 0.52 (52%) | 0.54 | 79% |
+| **V3: LightGBM (Campeão)** | **0.62 (62%)** | **0.47 (47%)** | **0.54** | **76%** |
 
 O modelo campeão **V3 (LightGBM)**, apesar de ter a menor acurácia, foi o que melhor atendeu ao objetivo de negócio, alcançando um **recall de 62%**. Isso representa um **aumento de 158% na capacidade de detecção de inadimplentes** em comparação com o modelo baseline inicial.
 
@@ -107,5 +57,5 @@ Este projeto demonstra com sucesso a construção de um modelo de classificaçã
 ![Seaborn](https://img.shields.io/badge/Seaborn-3776AB?style=for-the-badge&logo=seaborn&logoColor=white)
 ![Scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
 ![LightGBM](https://img.shields.io/badge/LightGBM-4B0082?style=for-the-badge&logo=lightgbm&logoColor=white)
-
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=Jupyter&logoColor=white)
+
