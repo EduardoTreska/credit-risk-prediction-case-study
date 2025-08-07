@@ -1,0 +1,18 @@
+# --- Bibliotecas Essenciais para Análise e Modelagem ---
+# Core para manipulação de dados e machine learning
+pandas==2.2.3
+numpy==2.2.3
+scikit-learn==1.6.1
+
+# Bibliotecas para visualização de dados
+matplotlib==3.10.0
+seaborn==0.13.2
+
+# Biblioteca para o modelo avançado de Gradient Boosting
+lightgbm==4.6.0
+
+
+# --- Ambiente de Desenvolvimento (Opcional, mas boa prática) ---
+# Para executar o projeto em formato de notebook
+notebook==7.3.3
+ipykernel==6.29.5
